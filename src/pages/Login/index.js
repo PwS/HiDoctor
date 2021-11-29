@@ -1,7 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { IconLogo } from '../../assets';
-import { Button, Gap, TextButton, TitleTextFormField } from '../../component/atoms';
+import { CustomButton, Gap, TextButton, TitleTextFormField } from '../../component/atoms';
+import { colors } from '../../utils';
 
 export default function Login() {
     return (
@@ -14,7 +15,7 @@ export default function Login() {
             <Gap height={10} />
             <TextButton text='Forgot My Password' size={12} />
             <Gap height={40} />
-            <Button title='Sign In' />
+            <CustomButton title='Sign In' />
             <Gap height={30} />
             <TextButton text='Create New Account' size={16} textAlign='center' />
         </View>
@@ -24,12 +25,12 @@ export default function Login() {
 const styles = StyleSheet.create({
     page: {
         padding: 40,
-        backgroundColor: 'white', flex: 1
+        backgroundColor: colors.white, flex: 1
     },
     title: {
         fontSize: 20,
         fontFamily: 'Nunito-SemiBold',
-        color: '#112340',
+        color: colors.text.primary,
         marginTop: 40,
         marginBottom: 40,
         maxWidth: 153

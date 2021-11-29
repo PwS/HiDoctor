@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { IconLogo } from '../../assets'
+import { colors } from '../../utils'
 
 export default function Splash({ navigation }) {
     useEffect(() => {
@@ -18,10 +19,10 @@ export default function Splash({ navigation }) {
 
 const styles = StyleSheet.create({
     page: {
-        backgroundColor: 'white',
+        backgroundColor: colors.white,
         flex: 1, alignItems: 'center', justifyContent: 'center'
     },
     title: {
-        fontSize: 20, fontWeight: '600', color: '#112340', marginTop: 20
+        fontSize: 20, fontWeight: '600', color: colors.text.primary, marginTop: 20
     }
 })

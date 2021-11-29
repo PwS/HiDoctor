@@ -1,7 +1,8 @@
 import React from 'react'
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import { IconLogo, IlGetStarted } from '../../assets';
-import { Button, Gap } from '../../component';
+import { CustomButton, Gap } from '../../component';
+import { colors } from '../../utils';
 
 
 const GetStarted = ({ navigation }) => {
@@ -14,9 +15,9 @@ const GetStarted = ({ navigation }) => {
                     mudah & fleksibel</Text>
             </View>
             <View>
-                <Button title='Get Started' onPress={() => navigation.navigate('Register')} />
+                <CustomButton title='Get Started' onPress={() => navigation.navigate('Register')} />
                 <Gap height={16} />
-                <Button type='secondary' title='Sign In' onPress={() => navigation.replace('Login')} />
+                <CustomButton type='secondary' title='Sign In' onPress={() => navigation.replace('Login')} />
             </View>
 
         </ImageBackground>
@@ -28,12 +29,12 @@ export default GetStarted;
 const styles = StyleSheet.create({
     page: {
         padding: 40,
-        justifyContent: 'space-between', backgroundColor: 'white', flex: 1
+        justifyContent: 'space-between', backgroundColor: colors.white, flex: 1
     },
     title: {
         fontFamily: 'Nunito-SemiBold',
         fontSize: 28,
-        color: 'white',
+        color: colors.white,
         marginTop: 91
     }
 })
