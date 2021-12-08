@@ -17,7 +17,7 @@ export default function Register({ navigation }) {
                 <Gap height={24} />
                 <TitleTextFormField label='Password' />
                 <Gap height={40} />
-                <CustomButton title='Continue' />
+                <CustomButton title='Continue' onPress={() => navigation.navigate('UploadPhoto')} />
             </View>
 
         </View>

@@ -2,7 +2,7 @@ import React from 'react'
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import { IconLogo, IlGetStarted } from '../../assets';
 import { CustomButton, Gap } from '../../component';
-import { colors } from '../../utils';
+import { colors, fonts } from '../../utils';
 
 
 const GetStarted = ({ navigation }) => {
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between', backgroundColor: colors.white, flex: 1
     },
     title: {
-        fontFamily: 'Nunito-SemiBold',
+        fontFamily: fonts.primary[600],
         fontSize: 28,
         color: colors.white,
         marginTop: 91
