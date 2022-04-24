@@ -11,5 +11,6 @@ Common Error
 
 Do This
 - cd android && ./gradlew clean
+
 While Permission Denied
 - chmod +x gradlew
